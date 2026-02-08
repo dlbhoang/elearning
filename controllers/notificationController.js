@@ -63,101 +63,24 @@ exports.markAsRead = (req, res) => {
     const user_id = decoded.id;
 
     const { notification_id } = req.body;
-
     if (!notification_id) {
       return res.status(400).json({ status: "error", message: "Thiếu notification_id" });
     }
 
-      // Send message to parent (teacher triggers)
-      exports.sendToParent = (req, res) => {
-        try {
-          const authHeader = req.headers["authorization"];
-          if (!authHeader) return res.status(401).json({ status: "error", message: "Thiếu token" });
-
-          const token = authHeader.split(" ")[1];
-          const decoded = jwt.verify(token, process.env.JWT_SECRET);
-          if (decoded.role !== 'teacher') return res.status(403).json({ status: 'error', message: 'Bạn không có quyền' });
-
-          const { student_id, title, message } = req.body;
-          if (!student_id || !message) return res.status(400).json({ status: 'error', message: 'Thiếu student_id hoặc message' });
-
-          // Lấy thông tin học sinh và parent field
-          db.query('SELECT id, name, parent FROM users WHERE id = ?', [student_id], (err, results) => {
-            if (err) return res.status(500).json({ status: 'error', message: 'Lỗi server', error: err.message });
-            if (!results || results.length === 0) return res.status(404).json({ status: 'error', message: 'Không tìm thấy học sinh' });
-
-            const student = results[0];
-
-            // Tạo notification cho học sinh
-            const createSql = `INSERT INTO notifications (user_id, type, title, message, related_id, related_type) VALUES (?, 'parent_message', ?, ?, ?, 'parent_message')`;
-            db.query(createSql, [student.id, title || 'Thông báo từ giáo viên', message, null], (err2) => {
-              if (err2) console.error('❌ Lỗi tạo notification cho học sinh:', err2);
-            });
-
-            // Nếu trường parent lưu user_id (số) thì tạo notification cho parent user nếu tồn tại
-            if (student.parent) {
-              // Nếu parent là số (user id)
-              const parentCandidate = String(student.parent).trim();
-              if (/^\d+$/.test(parentCandidate)) {
-                db.query('SELECT id FROM users WHERE id = ?', [parentCandidate], (err3, parentRes) => {
-                  if (!err3 && parentRes && parentRes.length > 0) {
-                    const parentId = parentRes[0].id;
-                    db.query(createSql, [parentId, title || 'Thông báo từ giáo viên', message, null], (err4) => {
-                      if (err4) console.error('❌ Lỗi tạo notification cho phụ huynh:', err4);
-                    });
-                  }
-                });
-              } else {
-                // Nếu parent có thể là số điện thoại, attempt external Zalo API if configured
-                if (process.env.ZALO_API_URL && process.env.ZALO_ACCESS_TOKEN) {
-                  const axios = require('axios');
-                  axios.post(process.env.ZALO_API_URL, {
-                    to: parentCandidate,
-                    message
-                  }, {
-                    headers: { Authorization: `Bearer ${process.env.ZALO_ACCESS_TOKEN}` }
-                  }).then(() => {
-                    console.log('✅ Sent message to parent via Zalo API');
-                  }).catch((err5) => {
-                    console.error('❌ Zalo API error:', err5?.message || err5);
-                  });
-                }
-              }
-            }
-
-            return res.json({ status: 'success', message: 'Đã gửi thông báo tới học sinh/phụ huynh (nếu có)' });
-          });
-
-        } catch (error) {
-          console.error(error);
-          res.status(401).json({ status: 'error', message: 'Token không hợp lệ' });
-        }
-      };
-    // Kiểm tra notification có thuộc user này không
     const checkSql = `SELECT id FROM notifications WHERE id = ? AND user_id = ?`;
     db.query(checkSql, [notification_id, user_id], (err, results) => {
-      if (err) {
-        console.error("❌ Lỗi kiểm tra notification:", err);
-        return res.status(500).json({ status: "error", message: "Lỗi server", error: err.message });
-      }
-
+      if (err) return res.status(500).json({ status: "error", message: "Lỗi server" });
       if (results.length === 0) {
         return res.status(404).json({ status: "error", message: "Không tìm thấy thông báo" });
       }
 
-      // Đánh dấu đã đọc
       const updateSql = `UPDATE notifications SET is_read = TRUE WHERE id = ? AND user_id = ?`;
       db.query(updateSql, [notification_id, user_id], (err2) => {
-        if (err2) {
-          console.error("❌ Lỗi cập nhật notification:", err2);
-          return res.status(500).json({ status: "error", message: "Lỗi server", error: err2.message });
-        }
-
+        if (err2) return res.status(500).json({ status: "error", message: "Lỗi server" });
         res.json({ status: "success", message: "Đã đánh dấu đã đọc" });
       });
     });
   } catch (error) {
-    console.error(error);
     res.status(401).json({ status: "error", message: "Token không hợp lệ" });
   }
 };
