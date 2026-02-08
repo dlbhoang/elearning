@@ -265,3 +265,48 @@ exports.checkAndCreateExamNotifications = (req, res) => {
   }
 };
 
+// ==========================
+// GỬI THÔNG BÁO/TIN NHẮN CHO PHỤ HUYNH (teacher only)
+// Yêu cầu body: { parent_user_id, title, message }
+// Nếu gửi cho nhiều phụ huynh có thể truyền parent_user_ids: [1,2,3]
+// ==========================
+exports.sendToParent = (req, res) => {
+  try {
+    const { parent_user_id, parent_user_ids, title, message } = req.body;
+
+    const recipients = [];
+    if (parent_user_id) recipients.push(parent_user_id);
+    if (Array.isArray(parent_user_ids)) recipients.push(...parent_user_ids);
+
+    if (recipients.length === 0) {
+      return res.status(400).json({ status: 'error', message: 'Thiếu parent_user_id hoặc parent_user_ids' });
+    }
+
+    const insertSql = `
+      INSERT INTO notifications (user_id, type, title, message, created_at)
+      VALUES (?, 'message', ?, ?, NOW())
+    `;
+
+    let completed = 0;
+    let errors = 0;
+    recipients.forEach((rid) => {
+      db.query(insertSql, [rid, title || 'Thông báo', message || ''], (err) => {
+        if (err) {
+          console.error('❌ Lỗi tạo notification cho parent', rid, err);
+          errors++;
+        }
+        completed++;
+        if (completed === recipients.length) {
+          if (errors > 0) {
+            return res.status(500).json({ status: 'error', message: 'Một số thông báo không được gửi' });
+          }
+          return res.json({ status: 'success', message: `Đã gửi ${recipients.length} thông báo` });
+        }
+      });
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ status: 'error', message: 'Lỗi server' });
+  }
+};
+
