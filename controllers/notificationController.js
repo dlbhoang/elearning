@@ -272,38 +272,91 @@ exports.checkAndCreateExamNotifications = (req, res) => {
 // ==========================
 exports.sendToParent = (req, res) => {
   try {
-    const { parent_user_id, parent_user_ids, title, message } = req.body;
+    const { parent_user_id, parent_user_ids, student_id, title, message } = req.body;
 
     const recipients = [];
+
+    // Direct parent ids passed
     if (parent_user_id) recipients.push(parent_user_id);
     if (Array.isArray(parent_user_ids)) recipients.push(...parent_user_ids);
 
-    if (recipients.length === 0) {
-      return res.status(400).json({ status: 'error', message: 'Thiếu parent_user_id hoặc parent_user_ids' });
+    // If student_id provided, try to lookup student's parent field in users table
+    const finalizeAndSend = (resolvedRecipients) => {
+      if (!resolvedRecipients || resolvedRecipients.length === 0) {
+        return res.json({ status: 'success', message: 'Không tìm thấy phụ huynh để gửi thông báo' });
+      }
+
+      const insertSql = `
+        INSERT INTO notifications (user_id, type, title, message, created_at)
+        VALUES (?, 'message', ?, ?, NOW())
+      `;
+
+      let completed = 0;
+      let errors = 0;
+      resolvedRecipients.forEach((rid) => {
+        db.query(insertSql, [rid, title || 'Thông báo', message || ''], (err) => {
+          if (err) {
+            console.error('❌ Lỗi tạo notification cho parent', rid, err);
+            errors++;
+          }
+          completed++;
+          if (completed === resolvedRecipients.length) {
+            if (errors > 0) {
+              return res.status(500).json({ status: 'error', message: 'Một số thông báo không được gửi' });
+            }
+            return res.json({ status: 'success', message: `Đã gửi ${resolvedRecipients.length} thông báo` });
+          }
+        });
+      });
+    };
+
+    if (student_id && recipients.length === 0) {
+      // Lookup student parent field
+      const sql = `SELECT parent FROM users WHERE id = ? LIMIT 1`;
+      db.query(sql, [student_id], (err, rows) => {
+        if (err) {
+          console.error('❌ Lỗi lookup student parent', err);
+          return res.status(500).json({ status: 'error', message: 'Lỗi server' });
+        }
+        const parentField = rows[0]?.parent;
+        if (!parentField) {
+          return res.json({ status: 'success', message: 'Không có thông tin phụ huynh cho học sinh này' });
+        }
+
+        // parentField could be numeric id(s), email, or comma-separated
+        const parts = String(parentField).split(/[,;\s]+/).map(p => p.trim()).filter(Boolean);
+        const resolved = [];
+        let pending = parts.length;
+        if (pending === 0) return finalizeAndSend([]);
+
+        parts.forEach(p => {
+          if (/^\d+$/.test(p)) {
+            resolved.push(parseInt(p));
+            pending--;
+            if (pending === 0) finalizeAndSend(resolved);
+          } else if (p.includes('@')) {
+            // lookup user by email
+            db.query(`SELECT id FROM users WHERE email = ? LIMIT 1`, [p], (err2, r2) => {
+              if (!err2 && r2.length) resolved.push(r2[0].id);
+              pending--;
+              if (pending === 0) finalizeAndSend(resolved);
+            });
+          } else {
+            // unknown format, skip
+            pending--;
+            if (pending === 0) finalizeAndSend(resolved);
+          }
+        });
+      });
+      return;
     }
 
-    const insertSql = `
-      INSERT INTO notifications (user_id, type, title, message, created_at)
-      VALUES (?, 'message', ?, ?, NOW())
-    `;
+    // If recipients were already provided directly
+    if (recipients.length > 0) {
+      return finalizeAndSend(recipients);
+    }
 
-    let completed = 0;
-    let errors = 0;
-    recipients.forEach((rid) => {
-      db.query(insertSql, [rid, title || 'Thông báo', message || ''], (err) => {
-        if (err) {
-          console.error('❌ Lỗi tạo notification cho parent', rid, err);
-          errors++;
-        }
-        completed++;
-        if (completed === recipients.length) {
-          if (errors > 0) {
-            return res.status(500).json({ status: 'error', message: 'Một số thông báo không được gửi' });
-          }
-          return res.json({ status: 'success', message: `Đã gửi ${recipients.length} thông báo` });
-        }
-      });
-    });
+    return res.status(400).json({ status: 'error', message: 'Thiếu dữ liệu gửi thông báo (student_id hoặc parent_user_id)' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ status: 'error', message: 'Lỗi server' });
