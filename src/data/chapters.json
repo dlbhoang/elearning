@@ -1,0 +1,446 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "title": "Chương 1: Hàm số bậc nhất",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Khái niệm hàm số",
+          "duration": "15:00",
+          "videoUrl": "https://www.youtube.com/embed/video_1_1",
+          "exercises": [
+            {
+              "id": 1,
+              "question": "Hàm số bậc nhất có dạng nào dưới đây?",
+              "type": "single",
+              "options": [
+                { "id": "A", "text": "y = ax + b" },
+                { "id": "B", "text": "y = ax^2 + bx + c" },
+                { "id": "C", "text": "y = ax^3 + bx + c" }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Đồ thị hàm số bậc nhất",
+          "duration": "20:00",
+          "slide": "https://example.com/slides/hamsobacnhat_chuong1_bai2.pdf",
+          "exercises": [
+            {
+              "id": 2,
+              "question": "Đồ thị hàm số bậc nhất là hình gì?",
+              "type": "single",
+              "options": [
+                { "id": "A", "text": "Đường thẳng" },
+                { "id": "B", "text": "Đường parabol" },
+                { "id": "C", "text": "Đường cong phức tạp" }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Bài 3: Ứng dụng thực tế",
+          "duration": "18:00",
+          "videoUrl": "https://www.youtube.com/embed/video_1_3",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Hàm số bậc hai",
+      "lessons": [
+        {
+          "id": 4,
+          "title": "Bài 1: Khái niệm",
+          "duration": "14:00",
+          "videoUrl": "https://www.youtube.com/embed/video_2_1",
+          "exercises": []
+        },
+        {
+          "id": 5,
+          "title": "Bài 2: Đồ thị và tính chất",
+          "duration": "22:00",
+          "slide": "https://example.com/slides/hamsobachai_bai2.pdf",
+          "exercises": []
+        },
+        {
+          "id": 6,
+          "title": "Bài 3: Ứng dụng",
+          "duration": "16:00",
+          "videoUrl": "https://www.youtube.com/embed/video_2_3",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chương 3: Hệ phương trình",
+      "lessons": [
+        {
+          "id": 7,
+          "title": "Bài 1: Hệ phương trình bậc nhất",
+          "duration": "17:00",
+          "videoUrl": "https://www.youtube.com/embed/video_3_1",
+          "exercises": []
+        },
+        {
+          "id": 8,
+          "title": "Bài 2: Hệ phương trình bậc hai",
+          "duration": "19:00",
+          "slide": "https://example.com/slides/hephuongtrinh_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "2": [
+    {
+      "id": 1,
+      "title": "Chương 1: Văn học trung đại",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Khái quát văn học trung đại",
+          "duration": "12:00",
+          "videoUrl": "https://www.youtube.com/embed/video_4_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Thơ Nguyễn Du",
+          "duration": "15:00",
+          "slide": "https://example.com/slides/vanhoatrungdai_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Văn học hiện đại",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Tố Hữu và thơ cách mạng",
+          "duration": "13:00",
+          "videoUrl": "https://www.youtube.com/embed/video_4_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Nam Cao và văn xuôi",
+          "duration": "14:00",
+          "slide": "https://example.com/slides/vanhiendai_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "3": [
+    {
+      "id": 1,
+      "title": "Unit 1: Family Life",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Lesson 1: Vocabulary",
+          "duration": "10:00",
+          "videoUrl": "https://www.youtube.com/embed/video_5_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Lesson 2: Reading",
+          "duration": "12:00",
+          "slide": "https://example.com/slides/familylife_lesson2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Unit 2: Your Body and You",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Lesson 1: Speaking",
+          "duration": "11:00",
+          "videoUrl": "https://www.youtube.com/embed/video_5_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Lesson 2: Listening",
+          "duration": "13:00",
+          "slide": "https://example.com/slides/yourbody_lesson2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "4": [
+    {
+      "id": 1,
+      "title": "Chương 1: Cơ học",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Chuyển động thẳng đều",
+          "duration": "14:00",
+          "videoUrl": "https://www.youtube.com/embed/video_6_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Vận tốc",
+          "duration": "16:00",
+          "slide": "https://example.com/slides/cohoc_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Nhiệt học",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Nhiệt độ và đo nhiệt độ",
+          "duration": "12:00",
+          "videoUrl": "https://www.youtube.com/embed/video_6_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Sự nở vì nhiệt",
+          "duration": "15:00",
+          "slide": "https://example.com/slides/nhiethoc_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "5": [
+    {
+      "id": 1,
+      "title": "Chương 1: Thực vật",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Cấu tạo lá",
+          "duration": "10:00",
+          "videoUrl": "https://www.youtube.com/embed/video_7_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Quang hợp",
+          "duration": "14:00",
+          "slide": "https://example.com/slides/thucvat_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Động vật",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Hệ tiêu hóa",
+          "duration": "13:00",
+          "videoUrl": "https://www.youtube.com/embed/video_7_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Hệ tuần hoàn",
+          "duration": "15:00",
+          "slide": "https://example.com/slides/dongvat_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "6": [
+    {
+      "id": 1,
+      "title": "Chương 1: Nguyên tử",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Cấu tạo nguyên tử",
+          "duration": "15:00",
+          "videoUrl": "https://www.youtube.com/embed/video_8_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Đồng vị",
+          "duration": "12:00",
+          "slide": "https://example.com/slides/nguyentu_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Liên kết hóa học",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Liên kết ion",
+          "duration": "14:00",
+          "videoUrl": "https://www.youtube.com/embed/video_8_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Liên kết cộng hóa trị",
+          "duration": "16:00",
+          "slide": "https://example.com/slides/hoahoc_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "7": [
+    {
+      "id": 1,
+      "title": "Chương 1: Cơ bản về Python",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Cài đặt Python",
+          "duration": "08:00",
+          "videoUrl": "https://www.youtube.com/embed/video_9_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Cú pháp cơ bản",
+          "duration": "10:00",
+          "slide": "https://example.com/slides/python_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Lập trình nâng cao",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Hàm và module",
+          "duration": "12:00",
+          "videoUrl": "https://www.youtube.com/embed/video_9_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Lập trình hướng đối tượng",
+          "duration": "14:00",
+          "slide": "https://example.com/slides/python_bai4.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "8": [
+    {
+      "id": 1,
+      "title": "Chương 1: Địa lý kinh tế",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Tài nguyên thiên nhiên",
+          "duration": "13:00",
+          "videoUrl": "https://www.youtube.com/embed/video_10_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Nguồn lực kinh tế",
+          "duration": "12:00",
+          "slide": "https://example.com/slides/dialykinhte_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Môi trường",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Ô nhiễm môi trường",
+          "duration": "14:00",
+          "videoUrl": "https://www.youtube.com/embed/video_10_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Biến đổi khí hậu",
+          "duration": "15:00",
+          "slide": "https://example.com/slides/moi_truong_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ],
+
+  "9": [
+    {
+      "id": 1,
+      "title": "Chương 1: Pháp luật",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Hiến pháp",
+          "duration": "10:00",
+          "videoUrl": "https://www.youtube.com/embed/video_11_1",
+          "exercises": []
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Quyền và nghĩa vụ công dân",
+          "duration": "12:00",
+          "slide": "https://example.com/slides/phap_luat_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chương 2: Đạo đức",
+      "lessons": [
+        {
+          "id": 3,
+          "title": "Bài 1: Chuẩn mực đạo đức",
+          "duration": "11:00",
+          "videoUrl": "https://www.youtube.com/embed/video_11_3",
+          "exercises": []
+        },
+        {
+          "id": 4,
+          "title": "Bài 2: Trách nhiệm xã hội",
+          "duration": "13:00",
+          "slide": "https://example.com/slides/dao_duc_bai2.pdf",
+          "exercises": []
+        }
+      ]
+    }
+  ]
+}

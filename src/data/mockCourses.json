@@ -1,0 +1,37 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "title": "Chương 1: Hàm số bậc nhất",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Bài 1: Khái niệm hàm số",
+          "duration": "15:00",
+          "videoUrl": "https://www.youtube.com/embed/HEfHFsfGXjs",
+          "slideUrl": "https://example.com/slides/bai1.pdf",
+          "exercises": [
+            {
+              "type": "multiple",
+              "question": "Hàm số bậc nhất có dạng nào?",
+              "options": ["y = ax + b", "y = ax^2 + bx + c", "y = a/x", "y = a^x"],
+              "answer": 0
+            },
+            {
+              "type": "fill",
+              "question": "Điền hệ số chưa biết trong hàm số y = ax + ...",
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Bài 2: Đồ thị hàm số bậc nhất",
+          "duration": "20:00",
+          "videoUrl": "https://www.youtube.com/embed/example2",
+          "exercises": []
+        }
+      ]
+    }
+  ]
+}

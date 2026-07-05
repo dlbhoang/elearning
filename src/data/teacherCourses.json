@@ -1,0 +1,82 @@
+[
+  {
+    "id": "math6",
+    "teacherId": 1,
+    "title": "Toán nâng cao lớp 6",
+    "description": "Rèn luyện tư duy logic, bài tập nâng cao chọn lọc.",
+    "duration": "10 tuần",
+    "price": "500.000đ",
+    "badge": "Bán chạy",
+    "startDate": "2024-09-01"
+  },
+  {
+    "id": "math7",
+    "teacherId": 1,
+    "title": "Toán tư duy lớp 7",
+    "description": "Phát triển tư duy giải toán, bài tập thực tiễn.",
+    "duration": "8 tuần",
+    "price": "450.000đ",
+    "badge": "Hot",
+    "startDate": "2024-09-15"
+  },
+  {
+    "id": "math9",
+    "teacherId": 1,
+    "title": "Ôn thi vào lớp 10 môn Toán",
+    "description": "Chuyên đề tổng ôn và luyện đề sát cấu trúc thi.",
+    "duration": "12 tuần",
+    "price": "750.000đ",
+    "badge": "Mới",
+    "startDate": "2024-10-15"
+  },
+  {
+    "id": "mathOlympic",
+    "teacherId": 1,
+    "title": "Toán Olympic cấp 2",
+    "description": "Bồi dưỡng học sinh giỏi, luyện thi Olympic Toán.",
+    "duration": "14 tuần",
+    "price": "1.200.000đ",
+    "badge": "Miễn phí",
+    "startDate": "2024-11-01"
+  },
+  {
+    "id": "physics10",
+    "teacherId": 2,
+    "title": "Vật lý cơ bản lớp 10",
+    "description": "Nắm vững kiến thức nền tảng Vật lý lớp 10.",
+    "duration": "10 tuần",
+    "price": "600.000đ",
+    "badge": "Bán chạy",
+    "startDate": "2024-09-10"
+  },
+  {
+    "id": "physics11",
+    "teacherId": 2,
+    "title": "Vật lý nâng cao lớp 11",
+    "description": "Chuyên đề nâng cao, bài tập chọn lọc lớp 11.",
+    "duration": "12 tuần",
+    "price": "700.000đ",
+    "badge": "Hot",
+    "startDate": "2024-10-05"
+  },
+  {
+    "id": "physics12",
+    "teacherId": 2,
+    "title": "Luyện thi THPT Quốc gia Vật lý",
+    "description": "Khoá học bám sát đề thi thật, mẹo giải nhanh.",
+    "duration": "14 tuần",
+    "price": "800.000đ",
+    "badge": "Bán chạy",
+    "startDate": "2024-11-05"
+  },
+  {
+    "id": "physicsOlympic",
+    "teacherId": 2,
+    "title": "Vật lý Olympic THPT",
+    "description": "Bồi dưỡng học sinh giỏi, luyện thi Olympic Vật lý.",
+    "duration": "16 tuần",
+    "price": "1.300.000đ",
+    "badge": "Mới",
+    "startDate": "2024-12-01"
+  }
+]

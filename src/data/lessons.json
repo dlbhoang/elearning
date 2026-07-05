@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Hàm số bậc nhất", "courseId": 1, "content": "Giới thiệu về hàm số bậc nhất và các tính chất cơ bản." },
+  { "id": 2, "title": "Định luật Ohm", "courseId": 2, "content": "Tìm hiểu về định luật Ohm trong vật lý và ứng dụng thực tế." },
+  { "id": 3, "title": "Phân tích tác phẩm Chí Phèo", "courseId": 3, "content": "Phân tích nhân vật và giá trị hiện thực trong tác phẩm Chí Phèo." }
+] 

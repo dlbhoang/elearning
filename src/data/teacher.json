@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "Cô Nguyễn Thị Mai",
+    "subject": "Toán lớp 6-9",
+    "bio": "Giáo viên giỏi cấp thành phố, 10 năm kinh nghiệm giảng dạy Toán trung học cơ sở. Chuyên gia về phương pháp giảng dạy hiện đại và ứng dụng công nghệ trong giáo dục.",
+    "avatar": "https://ui-avatars.com/api/?name=Nguyễn+Thị+Mai&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 10,
+    "email": "mai.nguyen@vtsacademy.vn",
+    "facebook": "https://facebook.com/mainguyen",
+    "linkedin": "",
+    "feedbacks": [
+      {
+        "name": "Phụ huynh Minh",
+        "comment": "Cô Mai giảng rất dễ hiểu, con tôi tiến bộ rõ rệt.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+      },
+      {
+        "name": "Học sinh Hoa",
+        "comment": "Em rất thích phong cách giảng bài của cô.",
+        "rating": 4,
+        "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thầy Lê Văn Dũng",
+    "subject": "Vật lý lớp 10-12",
+    "bio": "Thầy có hơn 15 năm giảng dạy, từng là trưởng bộ môn Vật lý tại THPT Chuyên Lê Hồng Phong. Chuyên gia về Vật lý lượng tử và Vật lý hiện đại.",
+    "avatar": "https://ui-avatars.com/api/?name=Lê+Văn+Dũng&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 15,
+    "email": "dung.le@vtsacademy.vn",
+    "facebook": "",
+    "linkedin": "https://linkedin.com/in/levandung",
+    "feedbacks": [
+      {
+        "name": "Học sinh Nam",
+        "comment": "Nhờ thầy mà em đạt 9.75 Vật lý kỳ thi vừa rồi.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cô Trần Thị Thu Hà",
+    "subject": "Ngữ văn lớp 9-12",
+    "bio": "Cô Hà có 12 năm kinh nghiệm giảng dạy Ngữ văn, chuyên gia về văn học hiện đại và kỹ năng làm văn nghị luận. Từng đạt giải thưởng giáo viên giỏi cấp quốc gia.",
+    "avatar": "https://ui-avatars.com/api/?name=Trần+Thị+Thu+Hà&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 12,
+    "email": "ha.tran@vtsacademy.vn",
+    "facebook": "https://facebook.com/hathan",
+    "linkedin": "https://linkedin.com/in/tranthuha",
+    "feedbacks": [
+      {
+        "name": "Học sinh Lan",
+        "comment": "Cô Hà giúp em hiểu sâu sắc về văn học và yêu thích môn Văn hơn.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/women/45.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Thầy Phạm Hoàng Phúc",
+    "subject": "Hóa học lớp 10-12",
+    "bio": "Thầy Phúc có 8 năm kinh nghiệm giảng dạy Hóa học, chuyên gia về Hóa học vô cơ và hữu cơ. Phương pháp giảng dạy trực quan, dễ hiểu.",
+    "avatar": "https://ui-avatars.com/api/?name=Phạm+Hoàng+Phúc&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 8,
+    "email": "phuc.pham@vtsacademy.vn",
+    "facebook": "https://facebook.com/phamphuc",
+    "linkedin": "",
+    "feedbacks": [
+      {
+        "name": "Học sinh Minh",
+        "comment": "Thầy Phúc giảng bài rất hay, em hiểu bài ngay lập tức.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cô Lê Thị Thanh Thảo",
+    "subject": "Tiếng Anh lớp 6-12",
+    "bio": "Cô Thảo có 10 năm kinh nghiệm giảng dạy Tiếng Anh, chứng chỉ TESOL và IELTS 8.5. Chuyên gia về giao tiếp và luyện thi IELTS.",
+    "avatar": "https://ui-avatars.com/api/?name=Lê+Thị+Thanh+Thảo&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 10,
+    "email": "thao.le@vtsacademy.vn",
+    "facebook": "https://facebook.com/lethao",
+    "linkedin": "https://linkedin.com/in/lethanhthao",
+    "feedbacks": [
+      {
+        "name": "Học sinh An",
+        "comment": "Cô Thảo giúp em tự tin giao tiếp tiếng Anh hơn rất nhiều.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Thầy Nguyễn Tuấn Minh",
+    "subject": "Sinh học lớp 10-12",
+    "bio": "Thầy Minh có 9 năm kinh nghiệm giảng dạy Sinh học, chuyên gia về Di truyền học và Sinh học phân tử. Từng tham gia nhiều dự án nghiên cứu khoa học.",
+    "avatar": "https://ui-avatars.com/api/?name=Nguyễn+Tuấn+Minh&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 9,
+    "email": "minh.nguyen@vtsacademy.vn",
+    "facebook": "",
+    "linkedin": "https://linkedin.com/in/nguyentuanminh",
+    "feedbacks": [
+      {
+        "name": "Học sinh Bình",
+        "comment": "Thầy Minh giảng bài rất chi tiết và dễ hiểu.",
+        "rating": 4,
+        "avatar": "https://randomuser.me/api/portraits/men/78.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Cô Võ Thị Kim Anh",
+    "subject": "Lịch sử lớp 10-12",
+    "bio": "Cô Anh có 11 năm kinh nghiệm giảng dạy Lịch sử, chuyên gia về Lịch sử Việt Nam và Lịch sử thế giới. Phương pháp giảng dạy sinh động, dễ nhớ.",
+    "avatar": "https://ui-avatars.com/api/?name=Võ+Thị+Kim+Anh&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 11,
+    "email": "anh.vo@vtsacademy.vn",
+    "facebook": "https://facebook.com/vokimanh",
+    "linkedin": "https://linkedin.com/in/vothikimanh",
+    "feedbacks": [
+      {
+        "name": "Học sinh Hương",
+        "comment": "Cô Anh làm cho môn Lịch sử trở nên thú vị và dễ hiểu.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/women/67.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Thầy Trần Văn Hùng",
+    "subject": "Địa lý lớp 10-12",
+    "bio": "Thầy Hùng có 13 năm kinh nghiệm giảng dạy Địa lý, chuyên gia về Địa lý tự nhiên và Địa lý kinh tế. Từng tham gia nhiều chuyến thực địa nghiên cứu.",
+    "avatar": "https://ui-avatars.com/api/?name=Trần+Văn+Hùng&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 13,
+    "email": "hung.tran@vtsacademy.vn",
+    "facebook": "https://facebook.com/tranvanhung",
+    "linkedin": "https://linkedin.com/in/tranvanhung",
+    "feedbacks": [
+      {
+        "name": "Học sinh Dũng",
+        "comment": "Thầy Hùng giúp em hiểu rõ về địa lý Việt Nam và thế giới.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Cô Phạm Thị Hương",
+    "subject": "Tin học lớp 6-12",
+    "bio": "Cô Hương có 7 năm kinh nghiệm giảng dạy Tin học, chuyên gia về lập trình và công nghệ thông tin. Từng làm việc tại các công ty công nghệ hàng đầu.",
+    "avatar": "https://ui-avatars.com/api/?name=Phạm+Thị+Hương&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 7,
+    "email": "huong.pham@vtsacademy.vn",
+    "facebook": "https://facebook.com/phamthihuong",
+    "linkedin": "https://linkedin.com/in/phamthihuong",
+    "feedbacks": [
+      {
+        "name": "Học sinh Tuấn",
+        "comment": "Cô Hương dạy lập trình rất hay, em đã tạo được game đầu tay.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Thầy Lý Văn Thành",
+    "subject": "Thể dục & GDCD",
+    "bio": "Thầy Thành có 14 năm kinh nghiệm giảng dạy Thể dục và Giáo dục công dân. Chuyên gia về rèn luyện thể chất và phát triển kỹ năng sống cho học sinh.",
+    "avatar": "https://ui-avatars.com/api/?name=Lý+Văn+Thành&background=F4A300&color=fff&size=200&bold=true&font-size=0.4",
+    "experience": 14,
+    "email": "thanh.ly@vtsacademy.vn",
+    "facebook": "https://facebook.com/lyvanthanh",
+    "linkedin": "https://linkedin.com/in/lyvanthanh",
+    "feedbacks": [
+      {
+        "name": "Học sinh Mai",
+        "comment": "Thầy Thành không chỉ dạy thể dục mà còn dạy chúng em nhiều bài học cuộc sống.",
+        "rating": 5,
+        "avatar": "https://randomuser.me/api/portraits/women/89.jpg"
+      }
+    ]
+  }
+]

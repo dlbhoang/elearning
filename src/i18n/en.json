@@ -1,0 +1,13 @@
+{
+  "brand": "EduSmart",
+  "home": "Home",
+  "courses": "Courses",
+  "teachers": "Teachers",
+  "contact": "Contact",
+  "login": "Login",
+  "grade": "Grade",
+  "chooseCourseLevel": "Choose course by grade",
+  "math": "Math",
+  "english": "English",
+  "science": "Science"
+}

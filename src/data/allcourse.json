@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Toán nâng cao lớp 5",
+    "description": "Khóa học giúp học sinh lớp 5 làm chủ các dạng toán nâng cao.",
+    "duration": "10 tuần",
+    "price": "500,000đ",
+    "grade": "Lớp 5",
+    "isHot": true,
+    "isNew": true,
+    "isFree": true,
+    "teacher": {
+      "name": "Thầy Nguyễn Văn A",
+      "subject": "Toán học",
+      "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+    "details": [
+      "Phép nhân chia nâng cao",
+      "Toán đồ logic",
+      "Ôn luyện đề thi học kỳ"
+    ]
+  }
+]

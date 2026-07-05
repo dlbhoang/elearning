@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Toán nâng cao lớp 10",
+    "description": "Nắm chắc kiến thức Toán học với lộ trình dễ hiểu, dễ nhớ.",
+    "image": "https://images.unsplash.com/photo-1584697964403-bf7ef4865402?auto=format&fit=crop&w=800&q=80",
+    "link": "/courses/toan-nang-cao-10",
+    "tag": "Mới"
+  },
+  {
+    "id": 2,
+    "title": "Ngữ Văn lớp 11",
+    "description": "Phân tích văn học sâu sắc, chuẩn bị tốt cho kỳ thi cuối kỳ.",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+    "link": "/courses/ngu-van-11",
+    "tag": "Hot"
+  },
+  {
+    "id": 3,
+    "title": "Vật lý lớp 12 ôn thi đại học",
+    "description": "Tổng hợp các dạng bài trọng tâm ôn thi THPT Quốc gia.",
+    "image": "https://images.unsplash.com/photo-1581090700227-1e8eefdca56e?auto=format&fit=crop&w=800&q=80",
+    "link": "/courses/ly-on-thi-12",
+    "tag": "Miễn phí"
+  }
+]

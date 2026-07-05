@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Bài tập về hàm số bậc nhất", "lessonId": 1, "courseId": 1, "teacherId": 1 },
+  { "id": 2, "title": "Bài tập về định luật Ohm", "lessonId": 2, "courseId": 2, "teacherId": 2 },
+  { "id": 3, "title": "Bài tập về Chí Phèo", "lessonId": 3, "courseId": 3, "teacherId": 1 }
+] 

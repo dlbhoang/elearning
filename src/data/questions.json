@@ -1,0 +1,130 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "question": "Cho hàm số y = 2x + 3. Hàm số này có tính chất gì?",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "Đồng biến trên R" },
+        { "id": "B", "text": "Nghịch biến trên R" },
+        { "id": "C", "text": "Không đơn điệu" },
+        { "id": "D", "text": "Có cực trị" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hàm số y = 2x + 3 có hệ số a = 2 > 0 nên đồng biến trên R"
+    },
+    {
+      "id": 2,
+      "question": "Tìm tập xác định của hàm số y = √(x - 2)",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "D = R" },
+        { "id": "B", "text": "D = [2, +∞)" },
+        { "id": "C", "text": "D = (2, +∞)" },
+        { "id": "D", "text": "D = (-∞, 2]" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Điều kiện xác định: x - 2 ≥ 0 ⇔ x ≥ 2"
+    }
+  ],
+  "2": [
+    {
+      "id": 3,
+      "question": "Tác giả 'Truyện Kiều' là ai?",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "Nguyễn Trãi" },
+        { "id": "B", "text": "Nguyễn Du" },
+        { "id": "C", "text": "Tản Đà" },
+        { "id": "D", "text": "Xuân Diệu" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "'Truyện Kiều' được sáng tác bởi Nguyễn Du"
+    },
+    {
+      "id": 4,
+      "question": "Chọn những đặc điểm của thơ ca trung đại Việt Nam.",
+      "type": "multiple",
+      "options": [
+        { "id": "A", "text": "Có vần điệu" },
+        { "id": "B", "text": "Thường không có luật thơ" },
+        { "id": "C", "text": "Thể hiện tâm hồn người dân" },
+        { "id": "D", "text": "Phản ánh cuộc sống phong kiến" }
+      ],
+      "correctAnswer": ["A", "C", "D"],
+      "explanation": "Thơ ca trung đại có vần điệu, thể hiện tâm hồn người dân và phản ánh cuộc sống phong kiến"
+    }
+  ],
+  "3": [
+    {
+      "id": 5,
+      "question": "What is the past tense of 'go'?",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "Goed" },
+        { "id": "B", "text": "Went" },
+        { "id": "C", "text": "Go" },
+        { "id": "D", "text": "Gone" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Quá khứ của 'go' là 'went'"
+    },
+    {
+      "id": 6,
+      "question": "Choose the correct meanings of the word 'bank'.",
+      "type": "multiple",
+      "options": [
+        { "id": "A", "text": "Ngân hàng" },
+        { "id": "B", "text": "Bờ sông" },
+        { "id": "C", "text": "Xe buýt" },
+        { "id": "D", "text": "Trường học" }
+      ],
+      "correctAnswer": ["A", "B"],
+      "explanation": "'Bank' có thể nghĩa là ngân hàng hoặc bờ sông"
+    }
+  ],
+  "4": [
+    {
+      "id": 7,
+      "question": "Trong chuyển động thẳng đều, vận tốc có đặc điểm gì?",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "Vận tốc không đổi" },
+        { "id": "B", "text": "Vận tốc thay đổi theo thời gian" },
+        { "id": "C", "text": "Gia tốc không đổi" },
+        { "id": "D", "text": "Gia tốc bằng 0" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Trong chuyển động thẳng đều, vận tốc không đổi theo thời gian"
+    },
+    {
+      "id": 8,
+      "question": "Chuyển động thẳng đều có gia tốc bằng 0. (Đúng/Sai)",
+      "type": "true_false",
+      "correctAnswer": "true",
+      "explanation": "Gia tốc trong chuyển động thẳng đều luôn bằng 0"
+    }
+  ],
+    "5": [
+    {
+      "id": 7,
+      "question": "Trong chuyển động thẳng đều, vận tốc có đặc điểm gì?",
+      "type": "single",
+      "options": [
+        { "id": "A", "text": "Vận tốc không đổi" },
+        { "id": "B", "text": "Vận tốc thay đổi theo thời gian" },
+        { "id": "C", "text": "Gia tốc không đổi" },
+        { "id": "D", "text": "Gia tốc bằng 0" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Trong chuyển động thẳng đều, vận tốc không đổi theo thời gian"
+    },
+    {
+      "id": 8,
+      "question": "Chuyển động thẳng đều có gia tốc bằng 0. (Đúng/Sai)",
+      "type": "true_false",
+      "correctAnswer": "true",
+      "explanation": "Gia tốc trong chuyển động thẳng đều luôn bằng 0"
+    }
+  ]
+}

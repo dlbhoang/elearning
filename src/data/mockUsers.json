@@ -1,0 +1,61 @@
+[
+  {
+    "email": "teacher@example.com",
+    "password": "123456",
+    "name": "Cô Mai Hương",
+    "role": "teacher",
+    "avatar": "/images/teacher1.jpg",
+    "subject": "Toán lớp 6-9",
+    "experience": 10,
+    "bio": "Giáo viên giỏi cấp thành phố, 10 năm kinh nghiệm giảng dạy Toán trung học cơ sở.",
+    "facebook": "https://facebook.com/mainguyen",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "email": "student@example.com",
+    "password": "123456",
+    "name": "Nguyễn Văn A",
+    "role": "student",
+    "avatar": "/images/student1.jpg",
+    "birthday": "2005-05-10",
+    "gender": "Nam",
+    "address": "456 Đường XYZ, Quận 3, TP.HCM",
+    "grade": "Lớp 10",
+    "school": "THPT Lê Quý Đôn"
+  },
+  {
+    "email": "admin@example.com",
+    "password": "123456",
+    "name": "Admin",
+    "role": "admin",
+    "avatar": "/images/admin.jpg",
+    "birthday": "1990-01-01",
+    "gender": "Khác",
+    "address": "1 Đường Admin, Quận 1, TP.HCM"
+  },
+  {
+    "email": "student11@example.com",
+    "password": "123456",
+    "name": "Trần Thị C",
+    "role": "student",
+    "avatar": "/images/student2.jpg",
+    "birthday": "2006-03-15",
+    "gender": "Nữ",
+    "address": "789 Đường DEF, Quận 7, TP.HCM",
+    "grade": "Lớp 11",
+    "school": "THPT Nguyễn Thị Minh Khai"
+  },
+  {
+    "email": "student12@example.com",
+    "password": "123456",
+    "name": "Lê Văn D",
+    "role": "student",
+    "avatar": "/images/student3.jpg",
+    "birthday": "2005-08-22",
+    "gender": "Nam",
+    "address": "321 Đường GHI, Quận 5, TP.HCM",
+    "grade": "Lớp 12",
+    "school": "THPT Trần Đại Nghĩa"
+  }
+] 

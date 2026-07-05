@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>VTS - Nền tảng học tập chuyên nghiệp</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/icon_logo.png" />
+
+    <!-- SEO Meta Tags (khuyến khích) -->
+    <meta name="description" content="Trang web giảng dạy chuyên nghiệp với các khóa học nổi bật, chứng chỉ uy tín và giảng viên chất lượng cao." />
+    <meta name="keywords" content="khóa học, học online, giáo dục, VTS, nền tảng học tập" />
+    <meta name="author" content="VTS Team" />
+
+    <!-- Social (Optional) -->
+    <meta property="og:title" content="VTS - Học tập mọi lúc, mọi nơi" />
+    <meta property="og:description" content="Khám phá các khóa học chất lượng với VTS - nền tảng học tập trực tuyến hiện đại." />
+    <meta property="og:image" content="/assets/icon_logo.png" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Dark Mode Init Script - Chạy trước React -->
+    <script>
+      (function() {
+        // Force light mode và xóa localStorage cũ
+        localStorage.removeItem('theme');
+        localStorage.setItem('theme', 'light');
+        document.documentElement.classList.remove('dark');
+      })();
+    </script>
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
